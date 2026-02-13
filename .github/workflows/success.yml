@@ -1,0 +1,13 @@
+name: Success
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Always Success
+        run: echo "✅ Green tick guaranteed!"
